@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <section className="side-bar">
+        <button>+ New chat</button>
+        <ul className="history">
+          <li>BLUGH</li>
+        </ul>
+        <nav>
+          <p>Made by alicezoe</p>
+        </nav>
+      </section>
+      <section className="main">
+        <h1>AliceGPT</h1>
+        <ul className="feed">
+
+        </ul>
+        <div className="bottom-section">
+          <div className="input-container">
+            <input/>
+              <div id="submit">submit</div>
+          </div>
+          <p className="info">
+            Chat GPT Mar 14 Version. Free Research Preview.
+            Our goal is to make AI systems more natural and safe to interact with.
+            Your feedback will help us improve.
+          </p>
+
+        </div>
+      </section>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
