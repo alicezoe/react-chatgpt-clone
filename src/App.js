@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react"
 
 const App = () => {
@@ -6,6 +5,8 @@ const App = () => {
   const [ message, setMessage ] = useState(null)
   const [ previousChats, setPreviousChats ] = useState([])
   const [ currentTitle, setCurrentTitle ] = useState(null)
+
+  const apiKey = process.env.REACT_APP_API_KEY;
 
   const createNewChat = () => {
     setMessage(null)
